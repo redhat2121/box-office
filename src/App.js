@@ -1,20 +1,20 @@
 import React from 'react';
-import { Switch, route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Starred from './pages/Starred';
 function App() {
   return (
     <Switch>
-      <route exact path="/Home">
+      <Route exact path="/">
         <Home />
-      </route>
-      <route exact path="/starred">
+      </Route>
+      <Route exact path="/starred">
         <Starred />
-      </route>
-      <route>
+      </Route>
+      <Route>
         <div> 404 not found !!</div>
-      </route>
+      </Route>
     </Switch>
   );
 }
