@@ -1,12 +1,13 @@
 import React from 'react';
-// eslint-disable-next-line
 import ShowCard from './ShowCard';
+
+import { FlexGrid } from '../styled';
 
 import IMAGE_NOT_FOUND from '../../Images/mustang.jpg';
 
 const ShowGrid = ({ data }) => {
   return (
-    <div>
+    <FlexGrid>
       {data.map(({ show }) => (
         <ShowCard
           key={show.id}
@@ -16,7 +17,7 @@ const ShowGrid = ({ data }) => {
           summary={show.summary}
         />
       ))}
-    </div>
+    </FlexGrid>
   );
 };
 
