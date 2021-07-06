@@ -5,7 +5,7 @@ import { FlexGrid } from '../styled';
 
 import IMAGE_NOT_FOUND from '../../Images/mustang.jpg';
 import { useShows } from '../../misc/custom-hooks';
-
+/* eslint-disable */
 const ShowGrid = ({ data }) => {
   const [starredShows, dispatchStarred] = useShows();
   return (
